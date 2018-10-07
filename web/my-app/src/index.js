@@ -14,17 +14,24 @@ import Sticky from 'react-stickynode';
 
 //local imports
 import Navbar from './components/Navbar.component'
+import Banner from './components/Banner.component'
 
 
 
 const Wedding = (
 <div>
-	<h1>wedding!</h1>
-
+	<Banner className="Banner"> Come celebrate with us </Banner>
+	{/*BREAK SPACE*/}
+	<div style={{height: '200px'}}> </div>
+	<div id='landing' className='topic'>
+		<p>
+			information on the location, arrival time, how to park, loose directions.
+		</p>
+	</div>
 	<Sticky enabled={true}>
 		<Navbar
 			id="navbar" className="navbar"
-			sections={[
+			topics={[
 				{label: 'LANDING',href: 'landing'},
 				{label: 'THE DAY OF',href: 'agenda'},
 				{label: 'WEDDING WEEK',href: 'schedule'},
@@ -35,16 +42,6 @@ const Wedding = (
 				{label: 'COUPLE\'S HISTORY',href: 'history'}]}>
 		</Navbar>
 	</Sticky>
-
-	{/*BREAK SPACE*/}
-	<div style={{height: '200px'}}> </div>
-
-	<div id='landing' className='topic'>
-		<h1> Come celebrate with us (script-like font)</h1>
-		<p>
-			information on the location, arrival time, how to park, loose directions.
-		</p>
-	</div>
 	<div id='agenda' className='topic'>
 		<p>
 			loose schedule for ceremony, party, etc. Day-of stuff.
@@ -64,38 +61,36 @@ const Wedding = (
 		</p>
 	</div>
 	<div id='photo' className='topic'>
-		<p>
-			for now, some info about the photographer, a link to their site. Once pictures are available, this will have a cool collage view I can put together, as well as a link to download.
-		</p>
-		<p>
-			Depending on how many you want to make available to others, we can either make a seperate page when the time comes or make it a slideshow sort of thing on this page. Tons of options.
-		</p>
+			<p>
+				for now, some info about the photographer, a link to their site. Once pictures are available, this will have a cool collage view I can put together, as well as a link to download.
+			</p>
+			<p>
+				Depending on how many you want to make available to others, we can either make a seperate page when the time comes or make it a slideshow sort of thing on this page. Tons of options.
+			</p>
 	</div>
 	<div id='registry' className='topic'>
-		<p>
-			Information about each of the places where you are registered. Perhaps an aside on what is most important.
-		</p>
+			<p>
+				Information about each of the places where you are registered. Perhaps an aside on what is most important.
+			</p>
 	</div>
 	<div id='hotel' className='topic'>
-		<p>
-			Information about hotels nearby and that sort of thing. Places people might like to eat while they are in town. Reccomended sites to see.
-		</p>
+			<p>
+				Information about hotels nearby and that sort of thing. Places people might like to eat while they are in town. Reccomended sites to see.
+			</p>
 	</div>
 	<div id='history' className='topic'>
 		{/*TODO: two columns*/}
-
-		<h3>Christi</h3>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et posuere quam, sed efficitur ex. Donec sodales odio eget vehicula tempor. Phasellus sed ligula vehicula, dictum arcu id, venenatis elit. Fusce non consectetur eros, eget blandit elit. Curabitur ac porta justo. Aenean ut malesuada turpis. Etiam porttitor euismod arcu, ac commodo mi ultrices vitae. Quisque consectetur egestas nibh, non iaculis eros consequat non. Nulla blandit quam est.
-		</p>
-		<h3>Justin</h3>
-		<p>
-			Etiam iaculis id justo a faucibus. Vestibulum hendrerit tincidunt risus eu commodo. Curabitur iaculis, massa tincidunt elementum tristique, orci justo lacinia velit, eu efficitur nisi ante quis mauris. Nulla facilisi. Fusce neque dui, consequat ut condimentum eu, maximus quis lorem. Integer eleifend libero at massa suscipit consequat. Nunc elementum, lacus eu facilisis dictum, elit diam facilisis sapien, at vulputate mauris felis eu ante. Fusce vitae pharetra mi, ac ullamcorper sapien.
-		</p>
-		<p>
-			Build-up to the proposal, purchase house, big things you've done together.
-		</p>
-
+			<header>Christi</header>
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce et posuere quam, sed efficitur ex. Donec sodales odio eget vehicula tempor. Phasellus sed ligula vehicula, dictum arcu id, venenatis elit. Fusce non consectetur eros, eget blandit elit. Curabitur ac porta justo. Aenean ut malesuada turpis. Etiam porttitor euismod arcu, ac commodo mi ultrices vitae. Quisque consectetur egestas nibh, non iaculis eros consequat non. Nulla blandit quam est.
+			</p>
+			<header>Justin</header>
+			<p>
+				Etiam iaculis id justo a faucibus. Vestibulum hendrerit tincidunt risus eu commodo. Curabitur iaculis, massa tincidunt elementum tristique, orci justo lacinia velit, eu efficitur nisi ante quis mauris. Nulla facilisi. Fusce neque dui, consequat ut condimentum eu, maximus quis lorem. Integer eleifend libero at massa suscipit consequat. Nunc elementum, lacus eu facilisis dictum, elit diam facilisis sapien, at vulputate mauris felis eu ante. Fusce vitae pharetra mi, ac ullamcorper sapien.
+			</p>
+			<p>
+				Build-up to the proposal, purchase house, big things youve done together.
+			</p>
 	</div>
 </div>
 );

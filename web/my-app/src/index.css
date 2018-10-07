@@ -1,7 +1,102 @@
-.topic {
-  padding: 20px;
+/*
+ *BANNER COMPONENT INNARDS
+ */
+.Banner {
+  background-color: black;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  display: block;
+  margin: auto;
+  width: 70%;
+  padding: 10px 0 10px 0;
+
+  font-size: 4em;
+  line-height: 100%;
+  text-align: center;
+  font-family: 'Playfair Display';
 }
 
+
+/*
+ * NAVBAR COMPONENT INNARDS
+ */
+
 .navbar {
-  background-color: #333
+  background: rgba(0,0,0,0.9);
+}
+
+.navbar ul {
+  list-style-type: none; /* No bullets on the list */
+  margin: 0;
+  overflow: hidden;
+  text-align: center;
+}
+
+.navbar ul li {
+  display: inline-block; /*allows multiple per line, space permitting.*/
+}
+
+.navbar ul li a { /* text inside list elements.*/
+  display: block; /*no text wrap per element.*/
+  padding: 15px 15px;
+  font-family: 'Playfair Display';
+  font-size: 1em;
+}
+
+.navbar ul li a:hover {
+    background: #a3b18a;
+    outline: none;
+}
+
+.navbar ul li a.active {
+    background: #b1bf92;
+    outline: none;
+}
+
+/*
+ *BODY
+ */
+
+body {
+  background-attachment: fixed;
+  background-image: url('background.jpg');
+  background-position-x:center;
+  background-position-y:top;
+  background-repeat: no-repeat;
+  background-size:cover;
+
+  color: white;
+
+  font-family: 'Montserrat';
+  overflow: scroll;
+}
+
+/*
+ * TOPIC COMPONENT INNARDS
+ */
+
+.topic {
+  /* padding and size */
+  margin: auto;
+  padding-top:100px; /* change depending on scroll behavior*/
+  width:80%;
+  padding: 35px;
+  margin-top: 100px;
+  border-radius: 8px;
+  /*
+  largely unnecessary? Smaller viewports.
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  */
+
+  background: rgba(0,0,0,0.75);
+}
+
+.topic header {
+  font-size: 2em;
+}
+.topic p {
+  font-size: 1.25em;
 }

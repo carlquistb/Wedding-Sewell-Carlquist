@@ -1,12 +1,12 @@
 /*
  * Brendan Carlquist
- * 
+ *
  * Navbar component. creates a navbar populated with multiple sections for scroll targetting.
- * 
+ *
  * accepts the following props:
  * sections: [] of {href:'link',label:'textToDisplay'}
  * id (string) for ID attribute.
- * 
+ *
  */
 
 
@@ -20,25 +20,25 @@ class Navbar extends React.Component {
 	render() {
 		let iter = 0;
 		return (
-			<nav id={this.props.id}>
+			<nav id={this.props.id} className={this.props.className}>
 				<ul>
 					{
-						this.props.sections.map(function (element) {
+						this.props.topics.map(function (element) {
 							iter++;
 							return(
 								<li key={iter}>
-									<Link 
-										to={element.href} 
+									<Link
+										to={element.href}
 										spy={true}
-										smooth={true} 
-										duration={500} 
+										smooth={true}
+										duration={500}
 										style={{cursor : 'pointer'}}
 									>
 											{element.label}
 									</Link>
 								</li>
 							);
-								
+
 						})
 					}
 				</ul>
