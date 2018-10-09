@@ -11,7 +11,12 @@ import React from 'react';
 class Banner extends React.Component {
   render() {
     return(
-      <div className= {this.props.className}> Christi and Justin's wedding! </div>
+      <div className= {this.props.className}>
+        <span className="girl">Christi &</span>
+        <span className="guy"> JUSTIN</span>
+        <br />
+        <span className="subtext">October 20th, 2018</span>
+      </div>
     );
   }
 }

@@ -1,3 +1,5 @@
+@import "skeleton.css";
+@import "normalize.css";
 /*
  *BANNER COMPONENT INNARDS
  */
@@ -7,15 +9,27 @@
   border-radius: 8px;
   display: block;
   margin: auto;
-  width: 70%;
+  width: 80%;
   padding: 10px 0 10px 0;
 
   font-size: 4em;
   line-height: 100%;
   text-align: center;
-  font-family: 'Playfair Display';
+  color: white;
 }
-
+.Banner .girl {
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 200;
+}
+.Banner .guy {
+  font-weight: 800;
+}
+.Banner .subtext {
+  font-style: italic;
+  font-family: 'Montserrat';
+  font-size: 0.5em;
+}
 
 /*
  * NAVBAR COMPONENT INNARDS
@@ -37,6 +51,7 @@
 }
 
 .navbar ul li a { /* text inside list elements.*/
+  color: white;
   display: block; /*no text wrap per element.*/
   padding: 15px 15px;
   font-family: 'Playfair Display';
@@ -90,12 +105,15 @@ body {
   -o-border-radius: 8px;
   -webkit-border-radius: 8px;
   */
-
   background: rgba(0,0,0,0.75);
+  color: white;
 }
 
 .topic header {
-  font-size: 2em;
+  font-family: 'Playfair Display';
+  font-size: 2.5em;
+  font-style: oblique;
+  padding-bottom: 10px;
 }
 .topic p {
   font-size: 1.25em;
